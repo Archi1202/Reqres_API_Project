@@ -1,5 +1,6 @@
 package tests.in.reqreg;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
 
@@ -7,6 +8,10 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
+
+
+@DisplayName("Check API methods related to the Users from website - https://reqres.in for practice purposes")
+
 
 public class UsersApiSimpleTests extends TestBase {
 
