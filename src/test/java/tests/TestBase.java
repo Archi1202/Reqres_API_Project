@@ -5,6 +5,8 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 
+import static io.restassured.http.ContentType.JSON;
+
 public class TestBase {
 
     @BeforeAll
@@ -15,7 +17,7 @@ public class TestBase {
 
     protected RequestSpecification request() {
         return RestAssured.given()
-                .contentType("application/json")
+                .contentType(JSON)
                 .log().all();
     }
 
