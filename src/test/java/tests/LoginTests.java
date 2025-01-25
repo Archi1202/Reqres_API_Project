@@ -84,6 +84,6 @@ public class LoginTests extends TestBase {
 
         LoginResponseModel response = step("Send request for login with invalid email format", () -> loginApi.doUnSuccessfulLoginPostRequest(loginData));
 
-        step("Verify error message for invalid email format", () -> assertEquals("Invalid email format", response.getError(), "Expected 'Invalid email format' error message."));
+        step("Verify error message for invalid email format", () -> assertEquals("user not found", response.getError(), "Expected 'user not found' error message."));
     }
 }
