@@ -2,16 +2,16 @@
   "base": {
     "project": "Anuar Zhangeldi Beeline KZ QA Automation",
     "environment": "DEV",
-    "comment": "Running scenarios for QA Automation position in Beeline KZ",
+    "comment": "API tests for Reqres platform",
     "reportLink": "",
     "language": "en",
     "messenger": "telegram",
-    "allureFolder": "https://jenkins.autotests.cloud/job/hw14_BeelineKZ_QA_Automation_Position/ws/allure-report/",
+    "allureFolder": "https://jenkins.autotests.cloud/job/Reqres_API_Project/ws/allure-report/",
     "enableChart": true
   },
   "telegram": {
-    "token": "7221628358:AAGwT9MUp-ImTnHYukjj3bZCsaxdfSeY8Tc",
-    "chat": "-1002442147111",
+    "token": "7686774183:AAGsS2vJGHZTCsYe1PB8wvVL1pFTmGbVWiE",
+    "chat": "-1002297246835",
     "replyTo": ""
   }
 }
