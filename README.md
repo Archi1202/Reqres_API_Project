@@ -1,3 +1,4 @@
+
 # Reqres.in API Automation Testing with Java and Selenide 🚀
 
 Welcome to the **Reqres.in API Automation Testing Project**! This repository demonstrates how to automate API testing for [Reqres.in](https://reqres.in/) using **Java** and **Selenide**. Developed as part of the QA.GURU educational platform, this project showcases best practices in API testing, including test structure, reporting, and maintainability.
@@ -17,26 +18,31 @@ The testing scope includes verifying various RESTful API endpoints provided by R
 
 ## 🧪 Test Cases
 
-### Covered Scenarios:
-1. **GET Endpoints**:
-   - Validate user data retrieval.
-   - Test single and multiple user queries.
-   - Validate error scenarios for non-existing users.
+### **Login Tests**
+1. **Verify successful login** – `eve.holt@reqres.in` with correct password.  
+2. **Verify unsuccessful login with invalid email** – Invalid email returns an error.  
+3. **Verify unsuccessful login with invalid email format** – Proper validation for malformed emails.  
+4. **Verify unsuccessful login without email** – Missing email triggers an error.  
+5. **Verify unsuccessful login without password** – Missing password is appropriately handled.  
 
-2. **POST Endpoints**:
-   - Validate user creation.
-   - Verify response payload and status codes.
-   - Test unsuccessful registration and login attempts.
+---
 
-3. **PUT Endpoints**:
-   - Validate user updates.
+### **Registration Tests**
+1. **Verify successful registration** – Proper registration returns valid ID and token.  
+2. **Verify unsuccessful registration with missing password** – Error message indicates missing password.  
+3. **Verify unsuccessful registration with invalid email format** – API rejects improper email format.  
+4. **Verify unsuccessful registration with missing email and password** – Tests for completely missing fields.
 
-4. **DELETE Endpoints**:
-   - Test user deletion and confirm appropriate responses.
+---
 
-5. **Edge Cases**:
-   - Test invalid inputs and boundary conditions.
-   - Validate server handling of large payloads.
+### **User Database Tests**
+1. **Verify total number of users on page 2** – Validates pagination and user count.  
+2. **Verify specific user data from the list** – Checks email or name of a specific user.  
+3. **Verify updated user data using PUT** – Confirms successful full updates.  
+4. **Verify partial update of user data using PATCH** – Tests partial updates to user data.  
+5. **Verify user email** – Validates the email field for a specific user.  
+6. **Verify user deletion** – Tests successful deletion of a user.  
+7. **Verify updated user data using PATCH** – Additional validation for partial updates.
 
 ---
 
@@ -71,3 +77,36 @@ The testing scope includes verifying various RESTful API endpoints provided by R
 
 ## 📂 Project Structure
 
+```plaintext
+src
+├── main
+│   ├── api
+│   │   └── LoginApi, RegisterApi, UserApi (API request logic)
+│   ├── models
+│   │   └── RequestModel, ResponseModel (POJO classes for request/response)
+│   └── utils
+│       └── Utility classes (helper methods, constants)
+├── test
+    ├── tests
+    │   └── LoginTests, RegisterTests, UserTests (test classes)
+    └── resources
+        └── Configuration files
+```
+
+---
+
+## 🌐 CI/CD Integration
+
+### **Jenkins**
+The project is integrated with Jenkins for continuous integration and deployment. You can view the latest builds here:  
+🔗 [Jenkins Job - Reqres API Project](https://jenkins.autotests.cloud/job/Reqres_API_Project/)
+
+---
+
+## 📊 Test Reports
+
+### **Allure TestOps**
+Interactive test execution results and detailed reporting are available on Allure TestOps:  
+🔗 [Allure Dashboard - Reqres API Project](https://allure.autotests.cloud/project/4582/launches)
+
+---
