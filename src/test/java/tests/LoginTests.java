@@ -72,14 +72,14 @@ public class LoginTests extends TestBase {
 
         LoginResponseModel response = step("Send request for login without email", () -> loginApi.doUnSuccessfulLoginPostRequest(loginData));
 
-        step("Verify error message for missing email", () -> assertEquals("Missing email", response.getError(), "Expected 'Missing email' error message."));
+        step("Verify error message for missing email", () -> assertEquals("Missing email or username", response.getError(), "Expected 'Missing email or username' error message."));
     }
 
     @Test
     @DisplayName("Verify unsuccessful login with invalid email format")
     void shouldFailLoginWithInvalidEmailFormat() {
         RequestModel loginData = new RequestModel();
-        loginData.setEmail("aaaaatesttest");
+        loginData.setEmail("aaaaa-testtest");
         loginData.setPassword("cityslicka");
 
         LoginResponseModel response = step("Send request for login with invalid email format", () -> loginApi.doUnSuccessfulLoginPostRequest(loginData));

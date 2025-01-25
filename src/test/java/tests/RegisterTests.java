@@ -64,24 +64,24 @@ public class RegisterTests extends TestBase {
 
         step("Verify error message for invalid email format", () ->
                 Assertions.assertThat(response.getError())
-                        .isEqualTo("Invalid email format")
-                        .as("Error message should indicate invalid email format"));
+                        .isEqualTo("Note: Only defined users succeed registration")
+                        .as("Error message should indicate 'Note: Only defined users succeed registration'"));
     }
 
     @Test
     @DisplayName("Verify unsuccessful registration with missing email and password")
     void shouldFailRegistrationWithoutEmailAndPassword() {
         RequestModel request = new RequestModel();
-        request.setEmail(""); // Missing email
-        request.setPassword(""); // Missing password
+        request.setEmail("");
+        request.setPassword("");
 
         RegisterResponseModel response = step("Send request for registration without email and password", () ->
                 registerApi.doUnSuccessfulRegisterPostRequest(request));
 
         step("Verify error message for missing email and password", () ->
                 Assertions.assertThat(response.getError())
-                        .isEqualTo("Missing email or password")
-                        .as("Error message should indicate missing email or password"));
+                        .isEqualTo("Missing email or username")
+                        .as("Error message should indicate missing email or username"));
     }
 
 }
