@@ -1,21 +1,30 @@
 package tests;
 
 import api.UsersApi;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import models.RequestModel;
 import models.UserListResponseModel;
 import models.UserResponseModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Owner("Anuar Zhangeldi")
+@Feature("User API")
 @DisplayName("User Database Tests")
 public class UserTests extends TestBase {
 
     UsersApi usersApi = new UsersApi();
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify user email")
     void shouldVerifyUserEmail() {
         UserListResponseModel response = usersApi.getUserList();
@@ -23,6 +32,8 @@ public class UserTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify updated user data using PATCH")
     void shouldUpdateUserDataWithPatch() {
         RequestModel request = new RequestModel();
@@ -38,12 +49,16 @@ public class UserTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify user deletion")
     void shouldDeleteUserData() {
         step("Send request to delete the user", () -> usersApi.deleteData());
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify updated user data using PUT")
     void shouldUpdateUserDataWithPut() {
         RequestModel request = new RequestModel();
@@ -59,6 +74,8 @@ public class UserTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify total number of users on page 2")
     void shouldVerifyTotalNumberOfUsers() {
         UserListResponseModel response = usersApi.getUserList();
@@ -66,6 +83,8 @@ public class UserTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify specific user data from the list")
     void shouldVerifySpecificUserDataFromList() {
         UserListResponseModel response = usersApi.getUserList();
@@ -77,6 +96,8 @@ public class UserTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify partial update of user data using PATCH")
     void shouldPartiallyUpdateUserData() {
         RequestModel request = new RequestModel();

@@ -1,6 +1,7 @@
 package tests;
 
 import api.RegisterApi;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -8,19 +9,22 @@ import models.RegisterResponseModel;
 import models.RequestModel;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @Owner("Anuar Zhangeldi")
-@Severity(SeverityLevel.CRITICAL)
+@Feature("Register API")
 @DisplayName("Tests for registration executions")
 public class RegisterTests extends TestBase {
 
     RegisterApi registerApi = new RegisterApi();
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify successful registration")
     void shouldVerifySuccessfulRegistration() {
         RequestModel request = new RequestModel();
@@ -38,6 +42,8 @@ public class RegisterTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify unsuccessful registration with missing password")
     void shouldVerifyUnsuccessfulRegistrationWithMissingPassword() {
         RequestModel request = new RequestModel();
@@ -53,6 +59,8 @@ public class RegisterTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify unsuccessful registration with invalid email format")
     void shouldFailRegistrationWithInvalidEmailFormat() {
         RequestModel request = new RequestModel();
@@ -69,6 +77,8 @@ public class RegisterTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify unsuccessful registration with missing email and password")
     void shouldFailRegistrationWithoutEmailAndPassword() {
         RequestModel request = new RequestModel();

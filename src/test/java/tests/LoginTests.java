@@ -1,27 +1,31 @@
 package tests;
 
 import api.LoginApi;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import models.LoginResponseModel;
 import models.RequestModel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
 @Owner("Anuar Zhangeldi")
-@Severity(SeverityLevel.CRITICAL)
+@Feature("Login API")
 @DisplayName("Tests for Login verifications")
 public class LoginTests extends TestBase {
 
     LoginApi loginApi = new LoginApi();
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify successful login")
     void shouldVerifySuccessfulLogin() {
         RequestModel loginData = new RequestModel();
@@ -37,6 +41,8 @@ public class LoginTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify unsuccessful login with invalid email")
     void shouldVerifyUnsuccessfulLogin() {
         RequestModel loginData = new RequestModel();
@@ -52,6 +58,8 @@ public class LoginTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify unsuccessful login without password")
     void shouldFailLoginWithoutPassword() {
         RequestModel loginData = new RequestModel();
@@ -64,6 +72,8 @@ public class LoginTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify unsuccessful login without email")
     void shouldFailLoginWithoutEmail() {
         RequestModel loginData = new RequestModel();
@@ -76,6 +86,8 @@ public class LoginTests extends TestBase {
     }
 
     @Test
+    @Tag("API")
+    @Severity(SeverityLevel.NORMAL)
     @DisplayName("Verify unsuccessful login with invalid email format")
     void shouldFailLoginWithInvalidEmailFormat() {
         RequestModel loginData = new RequestModel();
