@@ -140,3 +140,19 @@ Interactive test execution results and detailed reporting are available on Allur
 🔗 [Allure Dashboard - Reqres API Project](https://allure.autotests.cloud/project/4582/launches)
 
 ---
+
+---
+
+## Telegram Notifications
+
+Telegram is integrated to notify the team about test execution results.
+Notifications include:
+- Overall test status (Pass/Fail)
+- Summary of executed tests
+- Links to detailed reports for easy debugging
+
+**Example Telegram Notification:**
+
+<img align="center" src="src/test/resources/images/screens/Telegram_notification_api.png" width="600" height="500"/>
+
+---
