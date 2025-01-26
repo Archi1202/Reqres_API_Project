@@ -101,6 +101,25 @@ src
 The project is integrated with Jenkins for continuous integration and deployment. You can view the latest builds here:  
 🔗 [Jenkins Job - Reqres API Project](https://jenkins.autotests.cloud/job/Reqres_API_Project/)
 
+
+**Jenkins Build Status Screenshot:**
+
+<img align="center" src="src/test/resources/images/screens/Jenkins_API.png" width="650" height="350"/>
+
+
+**Allure Report Overview:**
+
+<img align="center" src="src/test/resources/images/screens/Allure_summary.png" width="650" height="350"/>
+
+
+**Graphical Representation in Allure Reports:**
+
+<img align="center" src="src/test/resources/images/screens/Allure_graphs.png" width="650" height="350"/>
+
+**Test Steps:**
+
+<img align="center" src="src/test/resources/images/screens/Allure_test_cases.png" width="650" height="350"/>
+
 ---
 
 ## 📊 Test Reports

@@ -32,7 +32,6 @@ tasks.withType(Test) {
     }
 }
 
-tasks.register('runing_reqresTests', Test) {
-    useJUnitPlatform {
-    }
+tasks.register('runReqresTests', Test) {
+    useJUnitPlatform()
 }
