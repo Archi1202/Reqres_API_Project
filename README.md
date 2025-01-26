@@ -16,6 +16,30 @@ The testing scope includes verifying various RESTful API endpoints provided by R
 
 ---
 
+## 🔧 Technologies Used
+
+### Programming Language
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+
+### Test Frameworks and Libraries
+- ![Selenide](https://img.shields.io/badge/Selenide-43B02A?style=for-the-badge&logo=selenium&logoColor=white): Used for its concise API for handling browser and API interactions.
+- ![REST Assured](https://img.shields.io/badge/REST_Assured-4caf50?style=for-the-badge&logo=swagger&logoColor=white): Simplifies API request and response validation.
+- ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=java&logoColor=white): For organizing and executing test cases.
+
+### Build and CI Tools
+- ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white): Dependency management and build automation.
+- ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white): CI/CD pipeline integration.
+
+### Reporting and Monitoring
+- ![Allure TestOps](https://img.shields.io/badge/Allure_TestOps-6236FF?style=for-the-badge&logo=data:image/svg+xml;base64,...): Centralized test management and detailed reporting of automated and manual tests.  
+  **TestOps Dashboard:** [Allure TestOps Project](https://allure.autotests.cloud/project/4582/launches)
+
+### Notifications and Alerts
+- ![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white): Automated test execution notifications and alerts delivered to a configured Telegram channel.
+
+
+---
+
 ## 🧪 Test Cases
 
 ### **Login Tests**
@@ -46,19 +70,6 @@ The testing scope includes verifying various RESTful API endpoints provided by R
 
 ---
 
-## 🔧 Technologies Used
-
-### Programming Language
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-
-### Test Frameworks and Libraries
-- ![Selenide](https://img.shields.io/badge/Selenide-43B02A?style=for-the-badge&logo=selenium&logoColor=white): Used for its concise API for handling browser and API interactions.
-- ![REST Assured](https://img.shields.io/badge/REST_Assured-4caf50?style=for-the-badge&logoColor=white): Simplifies API request and response validation.
-- ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white): For organizing and executing test cases.
-
-### Build and CI Tools
-- ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white): Dependency management.
-- ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white): CI/CD pipeline integration.
 
 ### Reporting
 - **Allure Reports**: Provides detailed insights into test execution and results.
