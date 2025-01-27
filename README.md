@@ -135,6 +135,7 @@ The project is integrated with Jenkins for continuous integration and deployment
 
 <img align="center" src="src/test/resources/images/screens/Allure_graphs.png" width="650" height="350"/>
 
+
 **Test Cases:**
 
 <img align="center" src="src/test/resources/images/screens/Allure_test_cases.png" width="650" height="350"/>
@@ -153,10 +154,9 @@ Interactive test execution results and detailed reporting are available on Allur
 
 
 **Test cases:**
+
 <img align="center" src="src/test/resources/images/screens/TestOps_Test cases.png" width="650" height="350"/>
 
-
----
 
 ---
 
