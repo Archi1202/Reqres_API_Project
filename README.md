@@ -118,9 +118,18 @@ The project is integrated with Jenkins for continuous integration and deployment
 🔗 [Jenkins Job - Reqres API Project](https://jenkins.autotests.cloud/job/Reqres_API_Project/)
 
 
-**Jenkins Build Status Screenshot:**
+**Jenkins Build Status:**
 
 <img align="center" src="src/test/resources/images/screens/Jenkins_API.png" width="650" height="350"/>
+
+
+**Jenkins Parameters:**
+
+- BASE_URI - link to the Reqres.in
+- BASE_PATH - method
+
+<img align="center" src="src/test/resources/images/screens/Jenkins_Parameters.png" width="550" height="250"/>
+
 
 
 **Allure Report Overview:**
@@ -132,7 +141,7 @@ The project is integrated with Jenkins for continuous integration and deployment
 
 <img align="center" src="src/test/resources/images/screens/Allure_graphs.png" width="650" height="350"/>
 
-**Test Steps:**
+**Test Cases:**
 
 <img align="center" src="src/test/resources/images/screens/Allure_test_cases.png" width="650" height="350"/>
 
@@ -144,20 +153,31 @@ The project is integrated with Jenkins for continuous integration and deployment
 Interactive test execution results and detailed reporting are available on Allure TestOps:  
 🔗 [Allure Dashboard - Reqres API Project](https://allure.autotests.cloud/project/4582/launches)
 
----
+**Dashboard:**
+
+<img align="center" src="src/test/resources/images/screens/TestOps_Dashboard.png" width="650" height="350"/>
+
+
+**Test cases:**
+<img align="center" src="src/test/resources/images/screens/TestOps_Test cases.png" width="650" height="350"/>
+
 
 ---
 
-## Telegram Notifications
+---
+
+## <img align="center" src="src/test/resources/images/icons/Telegram_Messenger.png" width="40" height="40"/> Telegram Notifications
 
 Telegram is integrated to notify the team about test execution results.
+
 Notifications include:
-- Overall test status (Pass/Fail)
+- Duration
+- Comment
 - Summary of executed tests
 - Links to detailed reports for easy debugging
 
 **Example Telegram Notification:**
 
-<img align="center" src="src/test/resources/images/screens/Telegram_notification_api.png" width="600" height="500"/>
+<img align="center" src="src/test/resources/images/screens/Telegram_bot_notification.png" width="600" height="500"/>
 
 ---
