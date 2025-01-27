@@ -1,6 +1,6 @@
 {
   "base": {
-    "project": "Anuar Zhangeldi Beeline KZ QA Automation",
+    "project": "API",
     "environment": "DEV",
     "comment": "API tests for Reqres platform",
     "reportLink": "",
