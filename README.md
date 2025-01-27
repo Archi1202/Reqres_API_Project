@@ -1,5 +1,6 @@
 
-# Reqres.in API Automation Testing with Java and Selenide 🚀
+# Reqres.in API Automation Testing with Java and Selenide <img align="center" src="src/test/resources/images/screens/Reqres_logo.jpg" width="60" height="60"/>
+
 
 Welcome to the **Reqres.in API Automation Testing Project**! This repository demonstrates how to automate API testing for [Reqres.in](https://reqres.in/) using **Java** and **Selenide**. Developed as part of the QA.GURU educational platform, this project showcases best practices in API testing, including test structure, reporting, and maintainability.
 
@@ -12,7 +13,11 @@ This project is designed for:
 - Understanding how to structure and execute API tests with modern tools.
 - Gaining hands-on experience with **Selenide**, **REST Assured**, and other key technologies.
 
-The testing scope includes verifying various RESTful API endpoints provided by Reqres.in for functionalities like user management, registration, and delayed responses.
+The testing scope includes verifying various RESTful API endpoints provided by Reqres.in for functionalities like user management, registration and data updates.
+
+
+<img align="center" src="src/test/resources/images/screens/Reqres_main_page.png" width="650" height="300"/>
+
 
 ---
 
@@ -60,12 +65,12 @@ The testing scope includes verifying various RESTful API endpoints provided by R
 ---
 
 ### **User Database Tests**
-1. **Verify total number of users on page 2** – Validates pagination and user count.  
-2. **Verify specific user data from the list** – Checks email or name of a specific user.  
-3. **Verify updated user data using PUT** – Confirms successful full updates.  
-4. **Verify partial update of user data using PATCH** – Tests partial updates to user data.  
-5. **Verify user email** – Validates the email field for a specific user.  
-6. **Verify user deletion** – Tests successful deletion of a user.  
+1. **Verify total number of users on page 2** – Validates pagination and user count.
+2. **Verify specific user data from the list** – Checks email or name of a specific user.
+3. **Verify updated user data using PUT** – Confirms successful full updates.
+4. **Verify partial update of user data using PATCH** – Tests partial updates to user data.
+5. **Verify user email** – Validates the email field for a specific user.
+6. **Verify user deletion** – Tests successful deletion of a user.
 7. **Verify updated user data using PATCH** – Additional validation for partial updates.
 
 ---
