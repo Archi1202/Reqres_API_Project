@@ -122,16 +122,6 @@ The project is integrated with Jenkins for continuous integration and deployment
 
 <img align="center" src="src/test/resources/images/screens/Jenkins_API.png" width="650" height="350"/>
 
-
-**Jenkins Parameters:**
-
-- BASE_URI - link to the Reqres.in
-- BASE_PATH - method
-
-<img align="center" src="src/test/resources/images/screens/Jenkins_Parameters.png" width="550" height="250"/>
-
-
-
 **Allure Report Overview:**
 
 <img align="center" src="src/test/resources/images/screens/Allure_summary.png" width="650" height="350"/>
