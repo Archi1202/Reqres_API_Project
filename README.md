@@ -1,8 +1,12 @@
 
-# Reqres.in API Automation Testing with Java and Selenide <img align="center" src="src/test/resources/images/screens/Reqres_logo.jpg" width="60" height="60"/>
+# <img align="center" src="src/test/resources/images/screens/Reqres_logo.jpg" width="60" height="60"/> Reqres.in API Automation Testing
 
 
-Welcome to the **Reqres.in API Automation Testing Project**! This repository demonstrates how to automate API testing for [Reqres.in](https://reqres.in/) using **Java** and **Selenide**. Developed as part of the QA.GURU educational platform, this project showcases best practices in API testing, including test structure, reporting, and maintainability.
+Welcome to the **Reqres.in API Automation Testing Project**! 
+
+This repository demonstrates how to automate API testing for [Reqres.in](https://reqres.in/) using **Java** and **Selenide**. 
+
+Developed as part of the QA.GURU educational platform, this project showcases practices in API testing, including test structure, reporting, and maintainability.
 
 ---
 
