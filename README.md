@@ -1,5 +1,5 @@
 
-# <img align="center" src="src/test/resources/images/screens/Reqres_logo.jpg" width="60" height="60"/> Reqres.in API Automation Testing
+# <img align="center" src="media/images/screens/Reqres_logo.jpg" width="60" height="60"/> Reqres.in API Automation Testing
 
 
 Welcome to the **Reqres.in API Automation Testing Project**! 
@@ -20,7 +20,7 @@ This project is designed for:
 The testing scope includes verifying various RESTful API endpoints provided by Reqres.in for functionalities like user management, registration and data updates.
 
 
-<img align="center" src="src/test/resources/images/screens/Reqres_main_page.png" width="650" height="300"/>
+<img align="center" src="media/images/screens/Reqres_main_page.png" width="650" height="300"/>
 
 
 ---
@@ -124,20 +124,23 @@ The project is integrated with Jenkins for continuous integration and deployment
 
 **Jenkins Build Status:**
 
-<img align="center" src="src/test/resources/images/screens/Jenkins_API.png" width="650" height="350"/>
+<img align="center" src="media/images/screens/Jenkins_API.png" width="650" height="350"/>
 
 **Allure Report Overview:**
 
-<img align="center" src="src/test/resources/images/screens/Allure_summary.png" width="650" height="350"/>
+🔗 [Allure Report - Reqres API Project](https://jenkins.autotests.cloud/job/Reqres_API_Project/allure/)
+
+
+<img align="center" src="media/images/screens/Allure_summary.png" width="650" height="350"/>
 
 
 **Graphical Representation in Allure Reports:**
 
-<img align="center" src="src/test/resources/images/screens/Allure_graphs.png" width="650" height="350"/>
+<img align="center" src="media/images/screens/Allure_graphs.png" width="650" height="350"/>
 
 **Test Cases:**
 
-<img align="center" src="src/test/resources/images/screens/Allure_test_cases.png" width="650" height="350"/>
+<img align="center" src="media/images/screens/Allure_test_cases.png" width="650" height="350"/>
 
 ---
 
@@ -149,18 +152,18 @@ Interactive test execution results and detailed reporting are available on Allur
 
 **Dashboard:**
 
-<img align="center" src="src/test/resources/images/screens/TestOps_Dashboard.png" width="650" height="350"/>
+<img align="center" src="media/images/screens/TestOps_Dashboard.png" width="650" height="350"/>
 
 
 **Test cases:**
-<img align="center" src="src/test/resources/images/screens/TestOps_Test cases.png" width="650" height="350"/>
+<img align="center" src="media/images/screens/TestOps_Test_cases.png" width="650" height="350"/>
 
 
 ---
 
 ---
 
-## <img align="center" src="src/test/resources/images/icons/Telegram_Messenger.png" width="40" height="40"/> Telegram Notifications
+## <img align="center" src="media/images/icons/Telegram_Messenger.png" width="40" height="40"/> Telegram Notifications
 
 Telegram is integrated to notify the team about test execution results.
 
@@ -172,6 +175,6 @@ Notifications include:
 
 **Example Telegram Notification:**
 
-<img align="center" src="src/test/resources/images/screens/Telegram_bot_notification.png" width="600" height="500"/>
+<img align="center" src="media/images/screens/Telegram_bot_notification.png" width="600" height="500"/>
 
 ---

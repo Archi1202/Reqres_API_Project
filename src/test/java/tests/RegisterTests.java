@@ -13,14 +13,13 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @Owner("Anuar Zhangeldi")
 @Feature("Register API")
 @DisplayName("Tests for registration executions")
 public class RegisterTests extends TestBase {
 
-    RegisterApi registerApi = new RegisterApi();
+    final RegisterApi registerApi = new RegisterApi();
 
     @Test
     @Tag("API")
@@ -34,11 +33,7 @@ public class RegisterTests extends TestBase {
         RegisterResponseModel response = step("Send request for successful registration", () ->
                 registerApi.doSuccessfulRegisterPostRequest(request));
 
-        step("Verify registration response", () -> {
-            assertNotNull(response.getId(), "ID should not be null");
-            assertNotNull(response.getToken(), "Token should not be null");
-            registerApi.checkTokenAndId(response);
-        });
+        step("Verify registration response", () -> registerApi.checkTokenAndId(response));
     }
 
     @Test

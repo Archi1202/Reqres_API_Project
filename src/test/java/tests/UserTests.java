@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @DisplayName("User Database Tests")
 public class UserTests extends TestBase {
 
-    UsersApi usersApi = new UsersApi();
+    final UsersApi usersApi = new UsersApi();
 
     @Test
     @Tag("API")

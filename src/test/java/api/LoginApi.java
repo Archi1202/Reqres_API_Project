@@ -11,7 +11,8 @@ import static specs.Specs.*;
 public class LoginApi {
 
     public LoginResponseModel doLoginPostRequest(RequestModel loginData) {
-        LoginResponseModel response = step("Execute login request", () ->
+
+        return step("Execute login request", () ->
                 given(commonRequest)
                         .body(loginData)
 
@@ -21,8 +22,6 @@ public class LoginApi {
                         .then()
                         .spec(response200)
                         .extract().as(LoginResponseModel.class));
-
-        return response;
     }
 
     public void checkToken(LoginResponseModel response) {
@@ -31,7 +30,8 @@ public class LoginApi {
     }
 
     public LoginResponseModel doUnSuccessfulLoginPostRequest(RequestModel loginData) {
-        LoginResponseModel response = step("Execute login request", () ->
+
+        return step("Execute login request", () ->
                 given(commonRequest)
                         .body(loginData)
 
@@ -41,13 +41,6 @@ public class LoginApi {
                         .then()
                         .spec(response400)
                         .extract().as(LoginResponseModel.class));
-
-        return response;
-    }
-
-    public void checkErrorLogin(LoginResponseModel response) {
-        step("Verify that there is error in response", () ->
-                Assertions.assertThat(response.getError()).isEqualTo("Missing password"));
     }
 
 }

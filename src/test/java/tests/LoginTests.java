@@ -7,13 +7,13 @@ import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import models.LoginResponseModel;
 import models.RequestModel;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
 @Owner("Anuar Zhangeldi")
@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @DisplayName("Tests for Login verifications")
 public class LoginTests extends TestBase {
 
-    LoginApi loginApi = new LoginApi();
+    final LoginApi loginApi = new LoginApi();
 
     @Test
     @Tag("API")
@@ -34,10 +34,7 @@ public class LoginTests extends TestBase {
 
         LoginResponseModel response = step("Send request for successful login", () -> loginApi.doLoginPostRequest(loginData));
 
-        step("Verify token is present in the response", () -> {
-            assertNotNull(response.getToken(), "Token should not be null");
-            loginApi.checkToken(response);
-        });
+        step("Verify token is present in the response", () -> loginApi.checkToken(response));
     }
 
     @Test
@@ -52,8 +49,7 @@ public class LoginTests extends TestBase {
         LoginResponseModel response = step("Send request for unsuccessful login", () -> loginApi.doUnSuccessfulLoginPostRequest(loginData));
 
         step("Verify error message in the response", () -> {
-            assertEquals("Missing password", response.getError(), "Error message does not match");
-            loginApi.checkErrorLogin(response);
+            Assertions.assertThat(response.getError()).isEqualTo("Missing password");
         });
     }
 

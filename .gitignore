@@ -1,31 +1,30 @@
-# Compiled class file
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
-# BlueJ files
-*.ctxt
-f.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-# IntelliJ IDEA
-.mtj.tmp/
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# IDE-specific files
+.idea/
 *.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+.vscode/
+*.swp
 
-# Package Files #
+# Gradle & Build
+.gradle/
+build/
+gradle/
+gradlew
+gradlew.bat
+settings.gradle
+
+# Maven
+target/
+
+# J2ME
+.mtj.tmp/
+
+# Package Files
 *.jar
 *.war
 *.nar
@@ -34,6 +33,15 @@ out/
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# OS-specific files
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Environment variable files
+.env

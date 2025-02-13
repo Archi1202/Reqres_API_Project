@@ -22,6 +22,7 @@ public class UserListResponseModel {
         String last_name;
         String avatar;
     }
+
     @lombok.Data
     public static class Support {
         String url;
