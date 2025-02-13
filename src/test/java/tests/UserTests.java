@@ -53,7 +53,7 @@ public class UserTests extends TestBase {
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Verify user deletion")
     void shouldDeleteUserData() {
-        step("Send request to delete the user", () -> usersApi.deleteData());
+        step("Send request to delete the user", usersApi::deleteData);
     }
 
     @Test
